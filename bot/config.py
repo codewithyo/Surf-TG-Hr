@@ -11,7 +11,7 @@ class Telegram:
     BOT_TOKEN = getenv("BOT_TOKEN", "7248590334:AAGmrgRmoPFgDDxik-9yHf3hcJYWltxPoFU")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
-    BASE_URL = getenv("BASE_URL", "").rstrip('/')
+    BASE_URL = getenv("BASE_URL", "https://depressed-jennine-yatinbst-8528e41c.koyeb.app/").rstrip('/')
     DATABASE_URL = getenv("DATABASE_URL", "mongodb+srv://hrbots94:Yatin123@hrfile.orihnb1.mongodb.net/?retryWrites=true&w=majority&appName=HRfile")
     AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", "-1002381223249").split(",") if channel.strip()]
     THEME = getenv("THEME", "quartz").lower()
